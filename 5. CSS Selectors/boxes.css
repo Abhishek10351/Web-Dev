@@ -1,0 +1,90 @@
+p > a{
+    color: dodgerblue;
+}
+
+div a {
+    text-decoration: underline wavy;
+}
+
+input{
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    color: red;
+}
+input:focus {
+    border: 2px solid #ccc;
+    box-shadow: 0 0 0 0.125em blueviolet;
+}
+.board{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 0;
+    /* Arrange all the divs inside in a square format */
+    display: flex;
+    flex-wrap: wrap;
+}
+.square{
+    width: 12.5%;
+    height: 20%;
+    border-color: black;
+    /* Arrange all boxes in a square format */
+    display: inline-block;
+
+}
+/* pseudo classes */
+.square:nth-of-type(2n){
+    background-color: rgb(255, 0, 0);
+}
+.square:nth-of-type(2n+1){
+    background-color: black;
+
+}
+/* pseudo elements */
+p::first-letter{
+    color: red;
+    font-size: 1em;
+}
+p::selection{
+    background-color: yellow;
+    color: red;
+}
+p::before{
+    content: "This is a paragraph";
+    color: red;
+}
+.damn p.para#lol{
+    color: red;
+}
+/* cascade matters
+the order matters 
+the one which is bellow is given more importance */
+
+/* write something about css specificity
+the more specific the selector is the more importance it is given
+id > class, attributes and pseudo-classes > element and pseudo-elements > 
+ */
+/* inheritance: 
+the elements inherit the properties of the outward element
+some are inheritable while others are not */
+button{
+    color: inherit !important; /* !important is used to override the default style */
+ }
+ 
+/* water effect in button */
+button{
+    background-color: black;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 10 100 10 20 cyan;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: cyan;
+    color: black;
+    box-shadow: 0 0 0 0.125em black;
+}
