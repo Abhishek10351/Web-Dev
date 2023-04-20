@@ -1,0 +1,17 @@
+section{
+    background-color: blueviolet;
+    width: 300px;
+    height: 300px;
+}
+#rgba{
+    background-color: rgba(255,255,255,0.5);
+    width: 50%;
+    height: 50%;
+}
+
+#opacity{
+    background-color: tomato;
+    width: 50%;
+    height: 50%;
+    opacity: 0.5;
+}
