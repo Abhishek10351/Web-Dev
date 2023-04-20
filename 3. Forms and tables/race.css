@@ -1,0 +1,41 @@
+.raceform{
+    background-color: blueviolet;
+    padding-top: 10px;
+    border-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border-top: 5px;
+    width: 600px;
+}
+input{
+    height: 30px;
+    width: 200px;
+    outline:none;
+    border-radius: 10px;
+    border-color:cyan;
+}
+input[type="radio"]{
+    accent-color: rgb(0, 140, 255);
+    border-radius: 0px;
+    width:max-content;
+}
+
+select{
+    font-size: 15px;
+    width:100px;
+    color: white;
+    background-color: cyan;
+    border: 50px;
+    height: 40px;
+}
+
+button{
+    background-color: cyan;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+}

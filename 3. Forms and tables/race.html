@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="race.css" >
+        <style>
+    option:hover{background-color:rgb(17, 0, 255);}
+</style>
+    </head>
+    <body>
+        <form class="raceform" action="">
+            <h1>Race Registration</h1>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" required/>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" minlength="3" required/>
+            <p>
+                Select a Race:
+                <p><input type="radio" name="race" id="race1" required/>
+                <label for="race1">Fun Run 5k</label></p>
+                <p><input type="radio" name="race" id="race2" />
+                <label for="race2">Half Marathon</label></p>
+                <p><input type="radio" name="race" id="race3" />
+                <label for="race3">Full Marathon</label></p>
+                
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" required>
+                <label for="password">Password</label>
+                <input type="password" required>
+            </p>
+            <p>
+                <label for="select">Select Age Group</label>
+                <select name="select" id="" required>
+                    <option disabled > -- select an option -- </option>
+                    <option value="under 18">under 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="30-50">30-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </p>
+            <p><button>Register</button></p>
+        </form>
+    </body>
+</html>
