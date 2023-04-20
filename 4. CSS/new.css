@@ -1,0 +1,13 @@
+p{
+    --bg-color: red;
+    text-align: justify;
+    text-decoration:red underline dashed;
+    letter-spacing: 0.8px;
+    size: 20px;
+    color: dodgerblue;
+    width: 600px;
+    height: 100px;
+    line-height: 25px;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
