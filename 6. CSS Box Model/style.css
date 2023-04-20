@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+}
+input{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 200px;
+    height: 40px;
+    border-color: cyan;
+    outline: none;
+    margin: 0;
+    background-color: dodgerblue;
+    color: white;
+
+}
+
+button{
+    color: dodgerblue;
+    background-color: cyan;
+    border-color: cyan;
+    width: 40px;
+    height: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+}
+
+
+button:hover{
+    color: cyan;
+    background-color: dodgerblue;
+    animation:  1s linear;
+}
+
+div{
+    /* write css to make the input and button inside the div in one straight line alligned properly */
+    vertical-align: top;
+}

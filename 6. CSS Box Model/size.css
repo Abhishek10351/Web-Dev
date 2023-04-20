@@ -1,0 +1,23 @@
+h1{
+        font-size: 20px;
+        color: blueviolet;
+}
+div{
+        font-size: 30px;
+        color: coral;
+}
+p{
+        font-size: 2em;
+        color: pink
+}
+button{
+        font-size: 2rem;
+        color: red;
+        border-radius: 1rem;
+        width: 200px;
+        border-image: fill;
+}
+button:hover{
+        background-color: rgba(234, 41, 150, 0.895);
+        color: black;
+}
