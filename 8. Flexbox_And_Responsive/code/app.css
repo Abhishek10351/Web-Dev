@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;800&display=swap');
 
-section#container div{
+section#container > div{
     width: 200px;
     height: 100px;   
     font-size: 3em;
     font-weight: 400;
-    flex-basis: 250px;
-    flex-grow: 1;
+    flex-basis: 600px;
+    /* flex-grow: 1; */
 }
 body {
     font-family: 'Sono', 'Open Sans', sans-serif;
@@ -28,18 +28,18 @@ section#container {
 
     /* flex-direction: column;  */
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* align-items: flex-start; */
     /* align-content: space-between; */
     /* + align items is on cross axis */
     /* + justify-content is on main axis */
-    /* + align-content is similar              to align-items but it works on the multi line items collectively,
+    /* + align-content is similar to align-items but it works on the multi line items collectively,
        ! it only works if flex-wrap is turned on */
     /* + align-self is used for a particular element */
 
     /* ! wrap reverse changes the direction of cross axis */
 }
-@media (max-width: 700px) {
+@media (max-width: 0px) {
     section#container {
         display: flex;
         flex-direction: column;
@@ -49,23 +49,16 @@ section#container {
     }
 }
 
-section#container > div:nth-of-type(1){
+/* section#container > div:nth-of-type(1){
     font-size: 40px;
     flex-grow: 1;
 }
 section#container > div:nth-of-type(2){
     flex-grow: 1;
-}
-section#container > div:nth-of-type(3){
-    flex-grow: 2;
-}
-::-webkit-scrollbar{   
-    background-color: #ff6b81;
-    overflow: hidden;
-}
-::-webkit-scrollbar-button{
-    background-color:#19e1da;;
-}
-::-webkit-scrollbar-thumb{
-    background-color: cornflowerblue;
+} */
+section#container > div:nth-of-type(5){
+    /* flex-grow: 1; */
+    flex-shrink: 1;
+    min-width: 80px;
+    /* + flex is shorthand for flex-grow, flex-shrink and flex-basis */
 }
