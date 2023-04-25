@@ -17,7 +17,7 @@ section#container div{
     height: 100px;   
     font-size: 3em;
     font-weight: 400;
-    flex-basis: 600px;
+    flex-basis: 100px;
     flex-grow: 1;
 }
 
@@ -45,14 +45,13 @@ section#container {
     /* + align-self is used for a particular element */
 
     /* ! wrap reverse changes the direction of cross axis */
-/*div:nth-of-type(1){
-    font-size: 40px;
+section#container div:nth-of-type(1){
+    flex-grow: 2;
+}
+section#container div:nth-of-type(2){
     flex-grow: 1;
 }
-div:nth-of-type(2){
-    flex-grow: 1;
-} */
-div:nth-of-type(5){
+section#container div:nth-of-type(5){
     /* flex-grow: 1; */
     flex-shrink: 1;
     min-width: 80px;
@@ -65,11 +64,22 @@ main {
     height: 500px;
     display: flex;
 }
-main .sidebar {
+main > .sidebar {
     background-color: #6930c3;
     flex:1 2 300px;
 }
-main .maincontent {
+main > .maincontent {
     background-color: #80ffdb;
     flex: 2 1 800px;
+}
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    main > .sidebar {
+        flex: 1 1 100%;
+    }
+    main > .maincontent {
+        flex: 1 1 100%;
+    }
 }

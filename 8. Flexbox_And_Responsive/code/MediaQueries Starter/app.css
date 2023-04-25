@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;700;800&display=swap');
+
+body {
+    font-family: Sono;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 400px;
+    flex-grow: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff6b81;
+    padding: 10px 0;
+}
+a{
+    background-color: blueviolet;
+    border-radius: 50px;
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: hsl(271, 60%, 64%);
+}
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        flex-basis: 200px;
+        align-items: center;
+    }
+}
+
