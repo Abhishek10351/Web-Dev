@@ -1,2 +1,4 @@
 .DS_Store
 others/
+# auto generated files
+jsconfig.json
