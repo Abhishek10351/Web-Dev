@@ -3,6 +3,7 @@
 // *the event object is passed to the event handler as an argument
 // *it contains information about the event and the element that triggered the event
 
+// * event handler is a function that runs when the event occurs, while callback is a function that is passed to another function as an argument and is executed inside that function
 
 const btn = document.querySelector('button');
 btn.addEventListener('click', function (e) {
