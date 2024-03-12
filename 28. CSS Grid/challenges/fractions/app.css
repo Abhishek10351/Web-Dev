@@ -1,0 +1,24 @@
+body {
+    height: 100vh;
+}
+.box {
+    border: 2px solid black;
+    font-size: 2em;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+
+#container {
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    min-height: 300px;
+    border: 1px solid black;
+    /* 
+  Create a layout with: 
+  - 3 equally sized columns 
+  - 2 rows.  The first should be twice as large as the second. */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
+}
