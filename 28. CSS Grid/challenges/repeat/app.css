@@ -1,0 +1,17 @@
+
+div {
+  border: 1px solid black;
+  min-height: 20px;
+}
+#container {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  /*  - 5 equally sized columns
+  - 4 equally sized rows */
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
