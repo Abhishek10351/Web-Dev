@@ -11,8 +11,11 @@ body {
     /* display: inline-grid; */
     /* -inline grid is used when we want to behave the container itself as inline,
     - but we want to activate grid inside it */
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-rows: 100px 100px 100px;
+    /* grid-template-columns: 1fr 1.5fr 1fr; */
+    grid-template-rows: 300px 200px 100px;
+    /* - grid templates-[rows/columns] are used to place the no of elements in a grid as needed */
+    
+
 }
 
 .box {
