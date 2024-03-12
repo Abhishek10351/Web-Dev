@@ -18,6 +18,10 @@ body {
     grid-template: repeat(5, 1fr) / repeat(2, 1fr);
 
     /* - grid-template is shorthand for grid-template-rows and grid-template-columns    */
+    /* gap: 20px; */
+    row-gap: 10px;
+    column-gap: 20px;
+    /* we can add gaps between child of elements */
 }
 
 .box {
