@@ -4,7 +4,7 @@ body {
 }
 #container {
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
     height: 1000px;
     border: 4px solid rgb(178, 178, 178);
     display: grid;
@@ -15,12 +15,12 @@ body {
     /* grid-template-rows: 300px 200px 100px; */
 
     /* - grid templates-[rows/columns] are used to place the no of elements in a grid as needed */
-    grid-template: repeat(5, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
 
     /* - grid-template is shorthand for grid-template-rows and grid-template-columns    */
     /* gap: 20px; */
-    row-gap: 10px;
-    column-gap: 20px;
+    row-gap: 2px;
+    column-gap: 5px;
     /* we can add gaps between child of elements */
 }
 
@@ -28,4 +28,8 @@ body {
     font-size: 1.5rem;
     font-family: "Comic Sans MS";
     font-weight: 500;
+}
+#container > .box:nth-of-type(1){
+    grid-row-start: 2;
+    grid-column-start:3 ;
 }

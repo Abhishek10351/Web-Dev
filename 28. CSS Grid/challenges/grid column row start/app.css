@@ -1,0 +1,17 @@
+#container {
+    background-size: 100px 500px;
+    background-image: linear-gradient(to right, grey 1px, transparent 1px),
+        linear-gradient(to bottom, grey 1px, transparent 1px);
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#pinkbox {
+    background-color: #e91e63;
+    grid-column-start: 4;
+}
