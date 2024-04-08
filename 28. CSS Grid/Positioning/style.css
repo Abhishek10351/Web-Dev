@@ -7,6 +7,9 @@
     height: 500px;
     border: 1px solid black;
     background-size: 100px 100px;
+    /* grid-auto-flow:column; */
+    /* - we can add column/row dense if we want to take up the blank space when an element is moved */
+    /* - this property is used to set the direction of the grid */
     /* background-image: linear-gradient(to right, grey 1px, transparent 1px),
         linear-gradient(to bottom, grey 1px, transparent 1px); */
     grid-template-rows: [header-start] 1fr [content-start] 4fr [footer-start] 1fr [footer-end];
