@@ -1,0 +1,22 @@
+
+.box {
+  background-color: #ff7979;
+  min-height: 20px;
+}
+.box.green {
+  background-color: #badc58;
+}
+
+#container {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+
+  /* Implement the following grid layout: 
+  - 3 equally sized columns 
+  - the middle column has a minimum size of 300px */
+
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 1fr) 1fr;
+}
