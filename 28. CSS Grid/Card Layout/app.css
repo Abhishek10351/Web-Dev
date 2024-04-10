@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+    /* auto makes the height increase according to content */
+    gap: 20px;
+}
+.container > * {
+    border-radius: 5px;
+}
+.card {
+    background-color: crimson;
+}
+.tall-card {
+    grid-row: span 2;
+}
+.header {
+    background-color: #ba68c8;
+}
+.footer {
+    background-color: #4db6ac;
+}
+.header,
+.footer {
+    grid-column: 1/-1;
+}
