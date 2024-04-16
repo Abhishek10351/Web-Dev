@@ -23,11 +23,8 @@ app.get("/random", (req, res) => {
 app.get("/r/:subreddit", (req, res) => {
     const { subreddit } = req.params;
     const data = redditData[subreddit];
-    if (data) {
-        res.render("subreddit", { ...data });
-    } else {
-        res.render("notfound", { subreddit });
-    }
+    
+    res.render("subreddit", { subreddit,data, ...data});
 });
 
 app.listen(port, () => {
