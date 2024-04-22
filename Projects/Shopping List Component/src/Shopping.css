@@ -1,0 +1,28 @@
+.shopping-list {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    padding-left: 40px;
+}
+.shopping-item {
+    width: auto;
+    padding: 1rem 0px;
+    /* border-bottom: 1px solid #ccc; */
+}
+.shopping-item:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+.shopping-item:last-child {
+    border-bottom: none;
+    /* text-decoration:line-through; */
+}
+.shopping-list-header {
+    padding: 0rem;
+    height:75px;
+    margin: 20px 10px;
+    border-bottom: 1px solid #ccc;
+}

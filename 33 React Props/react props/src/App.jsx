@@ -18,7 +18,6 @@ function randFruits() {
     };
 }
 function App() {
-    console.log(randFruits());
     return (
         <>
             <Slots {...randFruits()} />
