@@ -1,12 +1,12 @@
 import "./Shopping.css";
 
-function ShoppingItem({ id, item, quantity, completed }) {
+function ShoppingItem({ item, quantity, completed }) {
     return (
         <li
             className="shopping-item"
             style={{
                 textDecoration: completed
-                    ? "line-through 1px slategrey"
+                    ? "line-through slategrey"
                     : "none",
                 color: completed ? "slategrey" : null,
             }}

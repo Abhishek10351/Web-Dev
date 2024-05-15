@@ -1,3 +1,4 @@
+import Proptypes from "prop-types";
 export default function Slots({ val1, val2, val3 }) {
     const isWin = val1 === val2 && val2 === val3;
 
@@ -15,4 +16,8 @@ export default function Slots({ val1, val2, val3 }) {
             <h3>{isWin && "Congrats!!!"}</h3>
         </>
     );
+}
+
+Slots.Proptypes = {
+    val1: Proptypes.string
 }
