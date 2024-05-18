@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import Toggler from "./Toggler"
-import BoxGrid from './BoxGrid'
+import { useState } from "react";
+import "./App.css";
+import Toggler from "./Toggler";
+import BoxGrid from "./BoxGrid";
+import Counter from "./Counter";
 function App() {
-
-  return (
-    <>
-
-      <BoxGrid/>
-    </>
-  )
+    return (
+        <>
+            <Counter />
+        </>
+    );
 }
 
-export default App
+export default App;
