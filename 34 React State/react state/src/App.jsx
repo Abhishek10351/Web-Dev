@@ -4,10 +4,11 @@ import Toggler from "./Toggler";
 import BoxGrid from "./BoxGrid";
 import Counter from "./Counter";
 import Dumbo from "./Dumbo";
+import ScoreKeeper from "./ScoreKeeper";
 function App() {
     return (
-        <>
-            <Dumbo />
+      <>
+        <ScoreKeeper/>
         </>
     );
 }
