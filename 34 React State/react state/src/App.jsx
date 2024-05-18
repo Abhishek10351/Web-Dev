@@ -5,10 +5,11 @@ import BoxGrid from "./BoxGrid";
 import Counter from "./Counter";
 import Dumbo from "./Dumbo";
 import ScoreKeeper from "./ScoreKeeper";
+import EmojiClicker from "./EmojiClicker";
 function App() {
     return (
-      <>
-        <ScoreKeeper/>
+        <>
+            <EmojiClicker />
         </>
     );
 }
