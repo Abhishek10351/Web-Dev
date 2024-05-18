@@ -6,10 +6,12 @@ import Counter from "./Counter";
 import Dumbo from "./Dumbo";
 import ScoreKeeper from "./ScoreKeeper";
 import EmojiClicker from "./EmojiClicker";
+import UltimateScoreKeeper from "./UltimateScoreKeeper";
+
 function App() {
     return (
         <>
-            <EmojiClicker />
+            <UltimateScoreKeeper numPlayers={5} target={3} />
         </>
     );
 }
