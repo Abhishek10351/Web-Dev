@@ -1,5 +1,11 @@
+import { LuckySeven } from "./LuckySeven";
+import "./App.css";
 function App() {
-    return <></>;
+    return (
+        <>
+            <LuckySeven />
+        </>
+    );
 }
 
 export default App;

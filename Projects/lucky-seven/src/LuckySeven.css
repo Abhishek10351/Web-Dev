@@ -1,0 +1,12 @@
+* {
+    /* box-shadow: 0 0 3px blueviolet; */
+    font-family: "MS Sans Serif";
+}
+.dice {
+    display: inline-block;
+    width: 60px;
+    padding: 20px;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    background-color: slateblue;
+}
