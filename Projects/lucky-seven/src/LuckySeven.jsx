@@ -1,13 +1,9 @@
 import { useState } from "react";
 import "./LuckySeven.css";
+import { sum } from "./utils";
 
 const rollDice = (sides = 6) => {
     return Math.floor(Math.random() * sides) + 1;
-};
-const sum = (arr) => {
-    return arr.reduce((old, newVal) => {
-        return old + newVal;
-    });
 };
 
 const rollDices = (arr_size = 2) => {
@@ -17,15 +13,21 @@ const rollDices = (arr_size = 2) => {
             return rollDice();
         });
 };
-export function Dice({ value }) {
-    return <span className="dice">{value}</span>;
+export function Die({ value, color }) {
+    return (
+        <span className="dice" style={{ backgroundColor: color }}>
+            {value}
+        </span>
+    );
+}
+export function Dice({ dice, color="slateblue"}) {
+    return dice.map((dice, index) => {
+        return <Die key={index} value={dice} color={color} />;
+    });
 }
 
-export function LuckySeven() {
+export function LuckySeven({goal=7}) {
     const [diceValues, setDices] = useState(rollDices);
-    const dice = diceValues.map((dice, index) => {
-        return <Dice key={index} value={dice} />;
-    });
     const reroll = () => {
         setDices(
             diceValues.map((i) => {
@@ -33,13 +35,13 @@ export function LuckySeven() {
             })
         );
     };
+    const isWin = sum(diceValues) === goal;
     return (
         <section className="lucky-seven">
-            <h1 className="heading">Lucky7</h1>
-            <div className="">
-                {dice}{" "}
-                {sum(diceValues) == 7 ? "You won!!" : "You lost. Try again"}
-            </div>
+            <h1 className="heading">
+                Lucky7 {isWin && "You won!!"}
+            </h1>
+            <div className="dices">{<Dice dice={diceValues}/>}</div>
             <button onClick={reroll}>Roll Again!</button>
         </section>
     );

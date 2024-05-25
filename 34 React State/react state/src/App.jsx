@@ -7,11 +7,13 @@ import Dumbo from "./Dumbo";
 import ScoreKeeper from "./ScoreKeeper";
 import EmojiClicker from "./EmojiClicker";
 import UltimateScoreKeeper from "./UltimateScoreKeeper";
+import ResetGrid from "./ResetGrid";
 
 function App() {
     return (
         <>
-            <UltimateScoreKeeper numPlayers={5} target={3} />
+            {/* <UltimateScoreKeeper numPlayers={5} target={3} /> */}
+            <ResetGrid />
         </>
     );
 }
