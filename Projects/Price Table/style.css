@@ -123,19 +123,19 @@ table {
     border-spacing: 0;
 }
 
-html{
+html {
     text-transform: uppercase;
     font-family: "Open Sans";
     box-sizing: border-box;
 }
-body{
+body {
     background-color: #60a9ff;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.panel{
+.panel {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -149,30 +149,30 @@ ul > li {
     font-size: 14px;
     color: dodgerblue;
 }
-.pricing-header{
+.pricing-header {
     font-size: 18px;
     text-align: center;
     color: gray;
 }
 
-.pricing-plan{
+.pricing-plan {
     border-bottom: 1px solid #9dd1ff;
 }
-.pricing-plan:last-of-type{
+.pricing-plan:last-of-type {
     border-bottom: none;
 }
 .pricing-img {
     margin-bottom: 25px;
     max-width: 100%;
 }
-.pricing-price{
+.pricing-price {
     display: block;
     font-size: 32px;
     font-weight: 700;
     padding: 10px 0;
-    color: lightseagreen ;
+    color: lightseagreen;
 }
-.pricing-features-item{
+.pricing-features-item {
     font-weight: 600;
     font-size: 12px;
     padding: 20px 0px;
@@ -180,7 +180,7 @@ ul > li {
     border-bottom: 1px solid lightslategray;
     letter-spacing: 1px;
 }
-.pricing-button{
+.pricing-button {
     display: inline-block;
     text-decoration: none;
     font-weight: 600;
@@ -190,29 +190,28 @@ ul > li {
     background-color: white;
     border: 1px solid blueviolet;
 }
-.pricing-button:hover{
+.pricing-button:hover {
     background-color: rgb(45, 176, 237);
 }
-.pricing-button.is-featured{
+.pricing-button.is-featured {
     color: rgb(52, 136, 192);
 }
-.pricing-button.is-featured:hover{
+.pricing-button.is-featured:hover {
     background-color: rgb(198, 223, 232);
 }
 @media (width>=900px) {
-    body{
+    body {
         background-color: rgb(0, 183, 255);
     }
-    .panel{
+    .panel {
         flex-direction: row;
     }
-    .pricing-plan{
-    border-bottom: none;
-    padding: 25px 25px;
-    border-right: 1px solid #9dd1ff;
+    .pricing-plan {
+        border-bottom: none;
+        padding: 25px 25px;
+        border-right: 1px solid #9dd1ff;
     }
-    .pricing-plan:last-of-type{
+    .pricing-plan:last-of-type {
         border-right: none;
     }
-
 }
