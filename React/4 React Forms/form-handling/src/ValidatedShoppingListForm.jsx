@@ -53,6 +53,7 @@ export default function ValidatedShoppingListForm({ addItem }) {
                 name="quantity"
                 id="quantity"
                 onChange={handleChange}
+                min={1}
                 value={formData.quantity}
             />
             <button disabled={!productIsValid}>Add Item</button>
