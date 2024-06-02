@@ -1,10 +1,11 @@
 import "./App.css";
-import Icon from "@mui/material/Icon";
-import DeleteIcon from "@mui/icons-material/Delete";
+
 import CssBaseline from "@mui/material/CssBaseline";
+import TodoApp from "./TodoApp";
 function App() {
     return (
         <>
+            <TodoApp />
             <CssBaseline />
         </>
     );
