@@ -12,7 +12,7 @@ export default function TodoApp() {
         <div>
             <h1>Todo App</h1>
             <TodoItems initialTodos={default_todos} />
-            <NewTodo />
+            {/* <NewTodo /> */}
         </div>
     );
 }

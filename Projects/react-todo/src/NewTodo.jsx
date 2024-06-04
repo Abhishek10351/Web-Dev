@@ -1,8 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Input } from "@mui/material";
-// import
 import { Edit } from "@mui/icons-material";
-export default function NewTodo({addTodo}) {
+export default function NewTodo({ addTodo }) {
     const [todo, setTodo] = useState("");
     const input_sx = {
         width: "100%",
@@ -14,18 +13,14 @@ export default function NewTodo({addTodo}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addTodo({
-            id: Date.now(),
-            text: todo,
-            completed: false,
-        });
-        setTodo("");
-    }
-
+        if (todo) {
+            addTodo(todo);
+            setTodo("");
+        }
+    };
 
     return (
         <form onSubmit={handleSubmit}>
-            {/* add an icon for a new input component */}
             <Input
                 sx={input_sx}
                 type="text"
