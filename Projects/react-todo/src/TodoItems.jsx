@@ -1,11 +1,21 @@
 import List from "@mui/material/List";
 import { useState, useEffect } from "react";
 import Todo from "./Todo";
-import { v4 as uuid } from "uuid";
 import NewTodo from "./NewTodo";
-
-export default function TodoItems({ initialTodos }) {
-    const [todos, setTodos] = useState(initialTodos);
+import Box from "@mui/material/Box";
+const getLocalTodos = () => {
+    let todos = localStorage.getItem("todos");
+    if (todos) {
+        return JSON.parse(localStorage.getItem("todos"));
+    } else {
+        return [];
+    }
+}
+export default function TodoItems() {
+    const [todos, setTodos] = useState(getLocalTodos);
+    useEffect(() => {
+        localStorage.setItem("todos", JSON.stringify(todos));
+    }, [todos]);
     const handleToggle = (id) => {
         setTodos((prevTodos) =>
             prevTodos.map((todo) => {
@@ -21,7 +31,7 @@ export default function TodoItems({ initialTodos }) {
 
     const addTodo = (todo) => {
         const newTodo = {
-            id: uuid(),
+            id: crypto.randomUUID(),
             title: todo,
             completed: false,
         };
@@ -29,7 +39,16 @@ export default function TodoItems({ initialTodos }) {
     };
 
     return (
-        <>
+        <Box
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                width: "100%",
+                maxWidth: 360,
+                bgcolor: "background.paper",
+            }}
+        >
             <List
                 sx={{
                     width: "100%",
@@ -51,6 +70,6 @@ export default function TodoItems({ initialTodos }) {
                 })}
             </List>
             <NewTodo addTodo={addTodo} />
-        </>
+        </Box>
     );
 }
